@@ -74,20 +74,20 @@
 
         .next-button {
             position: absolute;
-            bottom: 30px;
+            bottom: 25px;
             left: 50%;
             transform: translateX(-50%) scale(0.9);
-            padding: 15px 40px;
-            font-size: 24px;
+            padding: 10px 28px;
+            font-size: 18px;
             font-family: 'Sacramento', cursive;
             background: linear-gradient(45deg, #FF6F61, #FFABAB);
             color: white;
             border: none;
-            border-radius: 30px;
+            border-radius: 25px;
             cursor: pointer;
             opacity: 0;
             transition: all 0.5s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         .next-button.show {
@@ -212,6 +212,7 @@ Forever Yours.`;
             if (letterIndex < loveLetter.length) {
                 letter.textContent = loveLetter.substring(0, letterIndex + 1);
                 letter.appendChild(cursor);
+                letter.parentElement.scrollTop = letter.parentElement.scrollHeight;
                 letterIndex++;
 
                 const currentChar = loveLetter[letterIndex - 1];
@@ -249,3 +250,4 @@ Forever Yours.`;
     </script>
 </body>
 </html>
+
