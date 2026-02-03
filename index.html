@@ -42,7 +42,7 @@
         /* Heading above the form */
         h2 {
             color: white;
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 600;
             margin-bottom: 25px;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
@@ -123,8 +123,22 @@
             transform: scale(1.1);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
-
-        @keyframes fadeIn {
+          /* RIGHT SIDE RESULT TEXT */
+        
+            #result {
+            position: absolute;
+            right: 140px;          /* 👉 yahin se right-side distance control karo */
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 22px;
+            color: #2b000f;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            line-height: 1.4;
+            max-width: 280px;
+            display: none;
+        
+            @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(-30px);
@@ -139,7 +153,8 @@
 </head>
 <body>
     <form id="login-form">
-        <h2>Type your name… the story starts with you</h2>
+        <h2>Type your name… 
+            the story starts with you</h2>
         <label for="code">My Love:</label>
         <input type="text" id="code" name="code" placeholder="Your Name">
         <button id="submit-btn">Login</button>
@@ -176,5 +191,6 @@
     </script>
 </body>
 </html>
+
 
 
