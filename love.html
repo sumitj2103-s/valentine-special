@@ -32,24 +32,32 @@
             margin-bottom: 2rem;
         }
 
-        .heading-main {
-            font-size: 3.5rem;
-            color: #FF0000;  /* Red color */
-            text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000;  /* Reduced glow effect */
-            background: linear-gradient(45deg, #FF1493, #FF69B4, #FFB6C1, #FF1493);
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientFlow 5s ease infinite;
-            margin-bottom: 1rem;
-        }
+     .heading-main {
+    font-size: 3.5rem;
+    color: #ff2d55;                 /* clean romantic pink-red */
+    text-shadow: 0 0 2px rgba(255, 45, 85, 0.4);  /* 👈 very light glow */
+    background: none;               /* 👈 gradient hataya */
+    -webkit-text-fill-color: initial;
+    animation: none;                /* 👈 blur/flow band */
+    margin-bottom: 1rem;
+}
 
-        .heading-subtitle {
-            font-size: 1.8rem;
-            color: #FF69B4;
-            animation: float 3s ease-in-out infinite;
-        }
+.heading-subtitle {
+    font-size: 1.8rem;
+    color: #ff85c2;
+    opacity: 0;
+    animation: fadeSlide 2.5s ease forwards;
+}
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
         /* Timeline Container */
         .timeline-container {
@@ -85,7 +93,7 @@
         .timeline-item h3 {
             color: #FF1493;
             margin-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
 
         /* Animations */
@@ -231,3 +239,4 @@
     </script>
 </body>
 </html>
+
