@@ -46,7 +46,7 @@
             font-weight: 600;
             margin-bottom: 25px;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-            line height:1.3;
+            line height: 1.3;
         }
 
         label {
@@ -123,20 +123,20 @@
             transform: scale(1.1);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
-          /* RIGHT SIDE RESULT TEXT */
-        
-            #result {
-            position: absolute;
-            right: 140px;          /* 👉 yahin se right-side distance control karo */
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 22px;
-            color: #2b000f;
-            font-family: 'Poppins', sans-serif;
-            font-style: italic;
-            line-height: 1.4;
-            max-width: 280px;
-            display: none;
+        /* RIGHT SIDE RESULT TEXT */
+#result {
+    position: absolute;
+    right: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #2b000f;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: 280px;
+    display: none;
+}
         
             @keyframes fadeIn {
             from {
@@ -177,8 +177,10 @@
                 resultDiv.innerHTML = 'Baby';
                 window.location.href = nextPageUrl; // Redirect to new page
             } else {
-                resultDiv.innerHTML = 'Hmm… lagta hai tum meri story ka hissa nahi ho';
-            }
+    resultDiv.innerHTML = 'Hmm… lagta hai tum meri story ka hissa nahi ho 💔';
+    resultDiv.style.display = "block";
+}
+
         });
 
         // Add active class to form for fadeIn effect
@@ -191,6 +193,7 @@
     </script>
 </body>
 </html>
+
 
 
 
