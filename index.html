@@ -126,7 +126,7 @@
         /* RIGHT SIDE RESULT TEXT */
 #result {
     position: absolute;
-    right: 240px;
+    left: calc(50% + 320px);  /* 🔥 MAGIC LINE */
     top: 50%;
     transform: translateY(-50%);
     font-size: 22px;
@@ -136,7 +136,9 @@
     line-height: 1.4;
     max-width: 280px;
     display: none;
+    z-index: 5;
 }
+
         
             @keyframes fadeIn {
             from {
@@ -193,6 +195,7 @@
     </script>
 </body>
 </html>
+
 
 
 
